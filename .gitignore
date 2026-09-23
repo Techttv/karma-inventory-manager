@@ -1,0 +1,22 @@
+# Ambiente virtuale — è binario, enorme, e ricreabile al 100% da uv.lock con `uv sync`
+.venv/
+
+# Cache Python — file generati automaticamente all'esecuzione, inutili da versionare
+__pycache__/
+*.pyc
+
+# Variabili d'ambiente — CONTIENE LE CREDENZIALI DEL TUO POSTGRES ESPOSTO SU INTERNET
+# Se lo committi per errore, chiunque clona il repo (o lo vede su GitHub se pubblico)
+# ha utente/password del tuo database raggiungibile da 0ed5akic49tunqns.myfritz.net
+.env
+
+# Database SQLite locale, se lo usaste per test rapidi in alternativa a Postgres
+*.db
+
+# Cache di pytest e ruff — rigenerate automaticamente, zero valore da versionare
+.pytest_cache/
+.ruff_cache/
+
+# File temporanei di sistema/editor (Windows, VS Code)
+Thumbs.db
+.vscode/

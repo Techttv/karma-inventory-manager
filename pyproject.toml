@@ -1,0 +1,27 @@
+[project]
+name = "karma-inventory-manager"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Techttv", email = "tommasocaricato05@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi>=0.141.1",
+    "nicegui>=3.17.1",
+    "psycopg[binary]>=3.3.6",
+    "pydantic>=2",
+    "pydantic-settings>=2.15.0",
+    "sqlmodel>=0.0.46",
+    "weasyprint>=70.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.16.8",
+]
