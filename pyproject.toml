@@ -6,6 +6,11 @@ readme = "README.md"
 authors = [
     { name = "Techttv", email = "tommasocaricato05@gmail.com" }
 ]
+dependencies = [
+    "nicegui>=3.17.1",
+]
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
 requires-python = ">=3.12"
 dependencies = [
     "alembic>=1.20.0",
